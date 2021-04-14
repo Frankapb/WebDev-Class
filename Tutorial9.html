@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycling HP</title>
+    <style>
+        header,
+        nav,
+        footer {
+            text-align: center;
+            font-size: x-large;
+            color: rgb(21, 189, 49);
+        }
+
+        #Content {
+            width: 60%;
+            border: 2px solid green;
+            padding: 15px;
+            float: left;
+            color: maroon;
+        }
+
+        aside {
+            width: 20%;
+            float: right;
+            border: 2px dotted green;
+            padding-left: 10px;
+            color: maroon;
+        }
+
+        button {
+            color: chartreuse;
+            background-color: black;
+        }
+
+        form {
+            background-color: chartreuse;
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+
+        label {
+            color: red;
+        }
+
+        .Cat {
+            color: rgb(28, 46, 148);
+        }
+
+        label:hover {
+
+            color: blue;
+            font-size: xx-large;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <Header>
+        <img src="/Images/Cycling.jpg" width="20%">
+        <h1>Cycling</h1>
+    </Header>
+
+    <hr>
+
+    <nav>
+        <a href="">Home</a>
+        <a href="">Vision</a>
+        <a href="">Contact</a>
+
+
+    </nav>
+
+    <hr>
+
+    <section id="Content">
+        <header>
+            <h1>Exploring in 2 wheels</h1>
+
+        </header>
+        <article>
+            <p>Cycling, also called bicycling or biking, is the use of bicycles for transport, recreation, exercise or
+                sport. People engaged in cycling are referred to as "cyclists", "bicyclists", or "bikers". Apart from
+                two-wheeled bicycles, "cycling" also includes the riding of unicycles, tricycles, quadricycles,
+                recumbent and similar human-powered vehicles (HPVs).</p>
+            <pre>
+                         Cycling, also called bicycling or biking
+                 Cycling, also called bicycling or biking
+    Cycling, also called bicycling or biking
+
+</pre>
+        </article>
+
+
+    </section>
+
+
+    <aside>
+        <section>Sports</section>
+        <section>Routes</section>
+        <section>Maps</section>
+        <section>Parks</section>
+        <section>Camp</section>
+
+    </aside>
+    <div style="clear: both;"></div><br>
+    <article class="Cat">
+        <h2>Categories:</h2>
+    </article>
+
+    <form action="https://en.wikipedia.org/wiki/POST_(HTTP)">
+
+        <label for="Indoor cycling">
+            <input id="Indoor cycling" type="radio" name="indoor-outdoor cycling">Indoor cycling
+        </label>
+
+        <label for="Outdoor cycling">
+            <input id="Outdoor cycling" type="radio" name="indoor-outdoor cycling">Outdoor cycling
+        </label><br>
+
+
+        <label for="Gravel">
+            <input type="checkbox" id="Gravel" name="Bikes">Gravel bike
+
+        </label>
+
+        <label for="Road">
+            <input type="checkbox" id="Road" name="Bikes"> Road bike
+
+        </label>
+
+        <label for="Mountain">
+            <input type="checkbox" id="Mountain" name="Bikes"> Mountain bike
+
+        </label><br>
+        <label for="Username">Login:
+            <input type="text" placeholder="Username" value="Login" name="Username">
+        </label>
+
+        <label for="Brand">Model:
+            <input type="text" placeholder="Bike`s model" value="Brand" required><br>
+        </label>
+
+        <label for="Telephone">Contact:
+            <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{2}-[0-9]{2}" value="Phone number"
+                placeholder="Phone number" required /><br>
+        </label>
+
+        <label for="Pin">PIN:
+            <input type="text" maxlength="4" placeholder="PIN" value="PIN" required>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+    <footer>
+        &copy; Copyright 2021
+
+
+    </footer>
+
+
+</body>
+
+</html>
