@@ -1,0 +1,94 @@
+body {
+    
+ background-image: url(https://www.chromethemer.com/google-chrome/backgrounds/download/random-hd-background-for-google-chrome-ct1393.jpg);
+background-image: ;
+}
+
+.wrapper {
+
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+.box {
+background-color: lightyellow;
+padding: 3em;
+width: 70%;
+height: 400px;
+margin: 0 auto;
+border-width: 70px;
+border-style: solid;
+border-image: url(/Images/border2.jpg) 30 30 round;
+
+
+}
+
+h1  {
+    font-family: 'Permanent Marker', cursive;
+color: yellow;
+text-align: center;
+}
+
+nav ul li a:hover 
+{
+    color: red;
+    
+
+
+}
+nav ul li a {
+color: greenyellow;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+ul {
+    display: inline-flex;
+    list-style-type: none;
+    
+    
+}
+
+li {
+    
+    padding: 5px; 
+margin-right: 2px;
+border-radius: 5px;
+font-size: larger;
+     
+
+
+}
+
+li:hover  {
+background-color: yellowgreen;
+
+
+
+}
+
+.wrapper pre {
+    font-family: 'Permanent Marker', cursive;
+    background-color: black;
+    color: chartreuse;
+
+    
+
+}
+
+.extra {
+width: 400px;
+height: 200px;
+border: dashed orange;
+overflow: auto;
+padding: 20px 20px 0 20px;
+float: right;
+margin-top: 100px;
+}
+
+h2  {
+    color: darkgreen;
+}
+
+li:visited {
+background-color: black;
+
+}

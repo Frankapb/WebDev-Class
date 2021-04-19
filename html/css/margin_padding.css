@@ -1,0 +1,58 @@
+body  {
+background-color: black;
+
+}
+div  {
+background-color: white;
+margin: 20px;
+padding: 20px;
+}
+
+.test  {
+width: 200px;
+margin: 0 auto;
+background-color: green;
+
+}
+
+.Boxmodel {
+
+    width: 300px;
+    height: auto;
+    background-color: whitesmoke;
+    margin: 0,5em;
+    border: 2px solid green;
+    padding: 0,5em;
+    float: right;
+}
+
+.links {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+}
+
+.links ul {
+list-style-type: upper-roman;
+
+}
+
+.links ul li a { 
+color: red;
+text-decoration: none;
+}
+
+.links ul li a:hover {
+color: black;
+
+} 
+
+.links ul li a:active{
+color: blue;
+
+}
+
+.links ul li a:visited {
+color: turquoise;
+
+}

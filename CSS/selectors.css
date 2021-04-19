@@ -24,7 +24,7 @@ background-color: yellow;
 }
 
 input {
-border: 3px;
+border: solid 3px;
 border-color: red;
 
 }
