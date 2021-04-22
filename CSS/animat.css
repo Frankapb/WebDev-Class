@@ -1,0 +1,94 @@
+body{
+    background: black;
+    margin: 0;
+    padding: 0;
+    
+} 
+
+
+
+#wrapper {
+
+padding: 12em;
+background: rgb(250,246,4);
+background: linear-gradient(90deg, rgba(250,246,4,1) 0%, rgba(1,26,203,1) 50%, rgba(196,0,0,1) 100%);
+
+}
+
+#wrapper h1 {
+    text-shadow: 10px 7px 6px greenyellow;
+    color: #ffc107;
+    text-align: center;
+    font-family: cursive;
+
+
+}
+
+.bike2 img {
+width: 250px;
+height: 250px;
+object-fit: cover;
+
+
+
+}
+.bike2 {
+    width: 10em;
+height: 5em;
+position: relative;
+
+
+}
+
+ .bike1 img {
+    width: 250px;
+    height: 250px;
+    object-fit:cover;
+   
+
+}
+
+@keyframes bike1 {
+from {
+    transform: rotate(0deg);
+
+}
+to  {
+transform: rotate(360deg);
+
+}
+
+}
+
+@keyframes bike2{
+    from {
+        left: 0px;
+    
+    }
+    to  {
+left: 400px;    
+    }
+    
+
+}
+
+#wrapper .bike1 {
+    background-color: #cddc39;
+    padding: 0 auto;
+    width: 22%;
+    box-shadow: 10px 10px 12px red;
+    animation: bike1 6s infinite linear;
+
+
+}
+
+#wrapper .bike2 {
+
+   margin: 0 auto;
+   animation-timing-function: ease-in;
+padding: 0 auto;
+animation: bike2 6s infinite;
+animation-direction: alternate-reverse;
+
+
+}

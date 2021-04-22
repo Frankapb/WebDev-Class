@@ -1,0 +1,125 @@
+body {
+background-color: goldenrod;
+
+}
+#parent  {
+    background-color: lawngreen;
+    padding: 5em;
+   display: flex;
+   margin: 0 auto;
+   flex-wrap: nowrap;
+   width: 50%;
+  
+}
+
+
+#block1 {
+background-color: rgb(0, 193, 252);
+padding: 1em;
+width: 250px;
+height: 250px;
+
+
+}
+
+#baby1 {
+background-color: lemonchiffon;
+padding: 1em;
+width: 250px;
+height: 250px;
+
+}
+
+#block2 {
+    background-color: rgb(21, 65, 209);
+    padding: 1em;
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+    margin-left: 50px;
+    
+    }
+
+    #baby2 {
+        background-color: rgb(116, 108, 41);
+        padding: 1em;
+        width: 250px;
+        height: 250px;
+        
+        }
+
+      
+    
+
+    #block3 {
+        background-color: rgb(156, 23, 23);
+        width: 350px;
+        height: 250px;
+       position: absolute;
+       top: 5em;
+    z-index: 10;
+    margin: 10em;
+        
+        }
+
+        .parent-box {
+display: flex;
+color: blanchedalmond;
+background-color: black;
+width: auto;
+padding: 3em;
+margin-top: 5em;
+}
+
+.parent-box2 {
+    display: block;
+    color: blanchedalmond;
+    background-color: black;
+    width: 30%;
+    padding: 3em;
+    float: right;
+    
+    }
+
+        .child  {
+border: rgb(255, 0, 212) 5px solid;
+padding: 1em;
+width: 100%;
+background-color: green;
+
+}
+
+
+@media only screen  
+and (min-width: 300px;)
+and (max-width: 950px;)
+{
+
+.parent-box{
+display: block;
+
+}
+
+.parent-box2 {
+
+background-color: rgb(240, 243, 235);
+
+
+}
+
+body {
+
+    background-color: rgb(201, 198, 25);
+}
+    
+}
+
+       
+
+
+       
+
+
+
+
+

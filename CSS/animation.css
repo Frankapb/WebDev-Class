@@ -1,0 +1,51 @@
+:root  {
+--webcolor: #4B0082; 
+--intec: #0000FF;
+--myborder: 10px solid #4B0082 ;
+
+}
+
+body  {
+background: green;
+background: -moz-linear-gradient(left, #CEBD00 0%, #FF0000 50%, #21FFEA 100%);
+    background: -webkit-linear-gradient(left, #CEBD00 0%, #FF0000 50%, #21FFEA 100%);
+    background: linear-gradient(to right, #CEBD00 0%, #FF0000 50%, #21FFEA 100%);
+}
+
+img {
+    animation: rotation 5s infinite linear;
+    }
+
+@keyframes rotation {
+    from {
+
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+
+}
+
+div>h2  {
+
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8, -15px -6px 12px rgba(206,89,55,0.4);
+}
+
+#rainbow {
+    -webkit-box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    padding: 10em;
+    width: 20%;
+    margin-top: 5em -moz-transform: skew(-15deg, 0deg);
+    -webkit-transform: skew(-15deg, 0deg);
+    -o-transform: skew(-15deg, 0deg);
+    -ms-transform: skew(-15deg, 0deg);
+    transform: skew(-15deg, 0deg);
+}
+
+#rainbow > p {
+border: var(--myborder);
+
+}

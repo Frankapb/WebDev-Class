@@ -1,0 +1,30 @@
+body {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+
+.row > div {
+
+    float: left;
+    width: 49%;
+    margin: 0;
+    padding: 1rem;
+    background-color: wheat;
+   
+}
+
+.row {
+    overflow: hidden;
+}
+
+@media screen and (max-width:414px) {
+    .row > div {
+float: none;
+margin: 0;
+width: auto;
+
+    }
+}

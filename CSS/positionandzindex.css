@@ -1,0 +1,99 @@
+/*
+  <div id="parent">
+<h1>parent</h1>
+<div id="block">
+<div id="innerblock">
+
+    
+</div>
+
+
+</div>
+
+    </div>
+    */
+    body {
+margin: 0;
+padding: 0;
+
+    }
+
+    #parent{
+background-color: seagreen;
+padding: 1em;
+
+    }
+
+    #block {
+background-color: greenyellow;
+width: 250px;
+padding: 250px;
+height: 1em;
+
+
+    }
+
+    #innerblock {
+background-color: black;
+width: 250px;
+height: 250px;
+    }
+
+    #block2 {
+background-color: blue;
+width: 250px;
+height: 250px;
+padding: 1em;
+position: absolute;
+top: 120px;
+left: 40px;
+
+    }
+    #block3 {
+        background-color: yellow;
+        width: 250px;
+        height: 250px;
+        padding: 1em;
+        position: absolute;
+        top: 130px;
+        left: 50px;
+    }
+
+    #block4 {
+        background-color: rgb(77, 163, 84);
+        width: 250px;
+        height: 250px;
+        padding: 1em;
+        position: absolute;
+        top: 140px;
+        left: 60px;
+        
+    }
+
+    #block5 {
+        background-color: rgb(63, 63, 155);
+        width: 250px;
+        height: 250px;
+        padding: 1em;
+        position: absolute;
+        top: 150px;
+        left: 70px;
+    }    
+    
+    /* FLEX MODEL*/
+
+.parentsbox {
+display: block;
+
+
+}
+
+.child {
+background-color: darkmagenta;
+padding: 3em;
+border: 1px solid goldenrod;
+
+
+}
+
+    /* END OF FLEX MODEL*/
