@@ -1,43 +1,4 @@
-.instagram {
-font-size: xx-large;
-color: yellowgreen;
-margin-left: 4em;
+.media-body:hover {
+background-color:lightgrey!important;
 
 }
-
-.twitch {
-    font-size: xx-large !important;
-    color: yellowgreen !important;
-    margin-left: 1em !important ;
-
-}
-
-.twitter {
-    font-size: xx-large !important;
-    color: yellowgreen !important;
-    margin-left: 1em !important ;
-
-}
-
-.navbar-brand img {
-    color: white;
-
-
-}
-
-.image1 {
-height: 13em !important;
-
-}
-
-.image2 {
-height: 14.5em  !important;
-
-}
-
-.media h2:hover  {
-
-color: coral !important;
-
-}
-
