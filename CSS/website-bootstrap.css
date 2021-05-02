@@ -1,0 +1,96 @@
+body {
+margin: 0;
+padding: 0;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.contact-info i  {
+color: rgb(52, 111, 114) !important;
+
+}
+
+.nav li a {
+color:  rgb(52, 111, 114) !important;
+
+}
+
+.social-links i  {
+color: purple;
+margin-left: 1em;
+font-size: 20px !important;
+}
+
+.company-name a{
+    color: rgb(82, 79, 82) !important;
+text-decoration: none;
+
+}
+
+.jumbotron {
+background-color: rgb(120, 173, 175);
+
+
+}
+
+.list-unstyled li .fa {
+color: rgb(52, 111, 114) !important ;
+
+}
+
+.list-unstyled li {
+color: whitesmoke;
+
+}
+
+.jumbotron .btn {
+border-radius: 90px;
+margin-left: 47%;
+border: none;
+}
+
+
+
+.jumbotron .card-body {
+margin: 0 !important;
+padding: 0 !important;
+
+}
+
+
+.card-body h3 {
+color: whitesmoke;
+
+}
+
+.card-body .card-text {
+color: whitesmoke;
+
+}
+
+.row .card {
+border: none;
+
+}
+
+.row .card-body {
+background-color: rgb(56, 23, 34) !important;
+border-radius: 45px;
+border: black;
+
+
+}
+
+.media img {
+width: 200px;
+height: 200px;
+object-fit: cover;
+}
+
+.pic .fa {
+
+    color: purple !important;
+    margin-left: 7px;
+    
+}
+
