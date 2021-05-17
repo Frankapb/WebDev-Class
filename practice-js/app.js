@@ -137,7 +137,53 @@ function timesFive(num) {
 console.log(timesFive(15));
 
 
+//Use conditional logic with If statements
+function ourTrueOrFalse (isItTrue) {
+if (isItTrue) {
+    return "Yes, it's true";
+}
+return "No, it's false";
+}
 
+function trueOrFalse(wasThatTrue) {
+if (wasThatTrue) {
+    return "Yes; that was true";
+}
+return "No, that was false";
+} 
+
+console.log(trueOrFalse (true)); 
+
+
+
+comment = "                       intecbrussel                              "
+result = comment.trim();
+result = comment.trimLeft();
+result = comment.trimRight();
+result = comment.trimEnd();
+
+//concat
+let str1="Intec";
+let str2="brussel";
+let num1= "123"
+
+result = str1.concat(str2)
+
+result = num1.concat('456')
+
+
+//charCode
+result = str1.charAt(0);
+result = str1.charCodeAt(0) //result=73 check in wikipedia latin alphabet uppercase "I" (DECIMAL FORMAT)
+
+//converting string into array
+let data = "Maryam Yasmine Lalena Hutu Marcio Kabbaj Barsam Frank"
+
+//split method
+
+result = data.split(" ") //space is added to identify names separetly.
+
+console.log(result);
 
 
 
