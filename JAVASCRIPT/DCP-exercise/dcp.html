@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Animated Counter</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">  
+</head>
+  <body>
+      <header>
+          <div class="container">
+              <h1>Animated counter</h1>
+          </div>
+      </header>
+   
+      <section class="counters">
+          <div class="container">
+              <div>
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  <div class="counter" data-target="60000">0</div>
+                  <h3>Likes</h3>
+              </div>
+
+              <div>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+               <div class="counter" data-target="20000">0</div>
+               <h3>Followers</h3>
+              </div>
+
+              <div>
+            <i class="fa fa-twitter" aria-hidden="true"></i>  
+            <div class="counter" data-target="9000">0</div>
+            <h3>Subscribers</h3>
+            </div>
+          </div>
+
+      </section>
+
+
+      <script>
+          const counters = document.querySelectorAll('.counter');
+const speed = 2000;
+
+counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = counter.innerText;
+
+        const inc = target / speed;
+
+        if(count < target) {
+counter.innerText = count + inc;
+setTimeout(updateCount, 500)
+        }else {
+            count.innerText = target;
+        }
+        
+
+        console.log(inc);
+    }
+    
+    updateCount();
+});
+      </script>
+    
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
