@@ -1,0 +1,55 @@
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+
+.mcgregor {
+    position: absolute !important;
+    transform: scaleX(-1);
+    margin-top: 230px;
+    cursor: pointer;
+}
+
+
+.walk-of-fame {
+    animation-name:walkOfFame;
+    animation-duration:8s;
+
+}
+
+.walk-of-shame {
+    animation-name:walkOfShame;
+    animation-duration:8s;
+
+}
+
+
+
+@keyframes walkOfFame {
+    0% {
+        left:0vw
+    }
+
+   
+ 
+    100% {
+        left:70vw;
+    }
+}
+
+
+@keyframes walkOfShame {
+    0% {
+        left:70vw;
+        transform:scaleX(1)
+    }
+
+   
+
+    100% {
+        left:0vw;
+        transform:scaleX(1)
+
+
+    }
+}

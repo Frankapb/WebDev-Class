@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="col s12" id="reg-form">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="name" type="text" placeholder="Name" autocomplete="off" class="form-control" required>
+                  <label for="name"></label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="Surname" placeholder="Surname" type="text" autocomplete="off" class="form-control"  required>
+                  <label for="Surname"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" placeholder="E-mail" autocomplete="off" class="form-control" required>
+                  <label for="email"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" type="password" placeholder="Password" class="form-control" minlength="6" required>
+                  <label for="password"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <div class="gender-male">
+                    <input class="with-gap" name="gender" type="radio" id="male" required />
+                    <label for="male">Male</label>
+                  </div>
+                  <div class="gender-female">
+                    <input class="with-gap" name="gender" type="radio" id="female" required />
+                    <label for="female">Female</label>
+                  </div>
+                </div>
+        
+                <div class="input-field col s6">
+                  <button class="btn btn-success btn-register waves-effect waves-light" type="submit" name="action">Register
+                     <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+         <!-- <a title="Login" class="ngl btn-floating btn-large waves-effect waves-light red"><i class="material-icons">input</i></a> -->
+        </div>
+    <!-- Optional JavaScript -->
+    <script src="js/reg.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
