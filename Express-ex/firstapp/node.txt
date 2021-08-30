@@ -1,0 +1,11 @@
+npm i express-generator -g
+
+express --help [testing tool]
+
+express --view=ejs yourProjectName
+
+cd yourProjectName
+
+npm install
+
+npm start

@@ -1,0 +1,9 @@
+{
+    "title": "Frank's Coffee Cave",
+    "description": "Welcome to a little piece of heaven. We hope you enjoy our broad selection of premium coffee and special dishes from all over the world. ",
+    "hours":[
+        {"day":"Mon - Fri", "time":"6am to 9pm" },
+        {"day":"Saturday", "time":"8am to 11pm" },
+        {"day":"Sunday", "time":"8am to 6pm" }
+        ]
+}

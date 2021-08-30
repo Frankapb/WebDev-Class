@@ -1,0 +1,16 @@
+{
+    "hero": {
+        "header":"Eat and Drink Healthy <br> for active days!",
+        "subtext":"At Frank's Coffee Cave, we only brew the freshest coffee from all around the world. We also include extense variety of dishes in our gastronomy section."
+    
+    },
+    "about":{
+        "header":"Welcome to Frank's Coffee Cave.",
+        "subtext":"Welcome to a little piece of heaven. We hope you enjoy our broad selection of premium coffee and special dishes from all over the world.",
+        "bg_image":"",
+        "images":[
+
+        ]
+
+    }
+}
