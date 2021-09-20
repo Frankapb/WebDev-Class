@@ -1,0 +1,8 @@
+* https://create-react-app.dev/
+* React UI
+    - React-bootstrap
+    - reactstrap
+    - MaterialUI
+    - PureCSS
+
+* https://reactjs.org/docs/jsx-in-depth.html

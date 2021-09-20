@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTAWSOME CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+    <div class="print-area">
+        <div class="header">
+            <img src="img/profile.jpg" alt="">
+            <div class="header-text">
+                <h1>FRANK PRIETO</h1>
+                <p>Graphic and Web Designer</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left-area">
+                <div class="contact">
+                    <h4>Contact</h4>
+                    <h5>Phone</h5>
+                    <p>+32485065885</p>
+                    <h5>Email</h5>
+                    <p>fapb.7891@gmail.com</p>
+                    <h4>Home</h4>
+                    <p>Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Omnis libero voluptatibus?</p>
+
+                </div>
+                <div class="skills">
+                    <h1>Skills</h1>
+                    <div class="bars">
+                        <div class="bar">
+                            <p>NODE.JS</p>
+                            <span></span>
+                        </div><div class="bar">
+                            <p>HTML/CSS</p>
+                            <span></span>
+                        </div><div class="bar">
+                            <p>JAVASCRIPT</p>
+                            <span></span>
+                        </div><div class="bar">
+                            <p>BOOTSTRAP</p>
+                            <span></span>
+                        </div><div class="bar">
+                            <p>REACT.JS</p>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow">
+                    <h1>Follow me</h1>
+                    <h4>Github</h4>
+                    <p>Github.com/username</p>
+                    <h4>Instagram</h4>
+                    <p>Instagram.com/username</p>
+                    <h4>Facebook</h4>
+                    <p>Facebook.com/username</p>
+                    <h4>Twitter</h4>
+                    <p>Twitter.com/username</p>
+                </div>
+
+            </div>
+            <div class="right-area">
+                <div class="about">
+                    <h1><span><i class="fa fa-user-o" aria-hidden="true"></i></span>ABOUT ME</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quasi minima tempora velit illo vitae iusto impedit, 
+                        dignissimos sapiente omnis, eius quo labore delectus
+                         perferendis illum rem numquam magni nesciunt doloribus.</p>
+                </div>
+                <div class="work">
+                    <h1><span><i class="fa fa-suitcase" aria-hidden="true"></i>
+                    </span>WORK EXPERIENCE</h1>
+                    <div class="work-group">
+                        <h3>LEAD WEB DESIGNER</h3>
+                        <h4>ETC College America</h4>
+                        <span>2014/2016</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                             Provident praesentium dolor et voluptatibus? Blanditiis 
+                             deserunt voluptatem sequi eveniet repellendus illum at
+                              nostrum exercitationem dicta cumque? Consequatur 
+                              laboriosam harum dicta minus!</p>
+                    </div>
+                    <div class="work-group">
+                        <h3>ASSISTANT WEB DESIGNER</h3>
+                        <h4>ETC College America</h4>
+                        <span>2014/2016</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                             Provident praesentium dolor et voluptatibus? Blanditiis 
+                             deserunt voluptatem sequi eveniet repellendus illum at
+                              nostrum exercitationem dicta cumque? Consequatur 
+                              laboriosam harum dicta minus!</p>
+                    </div>
+                    <div class="work-group">
+                        <h3>SENIOR WEB DESIGNER</h3>
+                        <h4>ETC College America</h4>
+                        <span>2014/2016</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                             Provident praesentium dolor et voluptatibus? Blanditiis 
+                             deserunt voluptatem sequi eveniet repellendus illum at
+                              nostrum exercitationem dicta cumque? Consequatur 
+                              laboriosam harum dicta minus!</p>
+                    </div>
+                </div>
+                <div class="education">
+                    <h1><span><i class="fa fa-book" aria-hidden="true"></i>
+                    </span>EDUCATION</h1>
+                    <div class="edu-group">
+                        <h4>U.E Fe y Alegria "ROCA VIVA" <br>
+                        High School</h4>
+                        <span>1992/1995</span>
+                        <p>MBA, Enterpreneurship Finance</p>
+                    </div>
+                    <div class="edu-group">
+                        <h4>University of Santa Maria <br>
+                        </h4>
+                        <span>1988/1992</span>
+                        <p>Accountancy</p>
+                    </div>
+                    <div class="edu-group">
+                        <h4>U.E Fe y Alegria "ROCA VIVA" <br>
+                        High School</h4>
+                        <span>1984/1988</span>
+                        <p>MBA, Enterpreneurship Finance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button>Print CV </button>
+
+
+    <!-- FONTAWESOME JS -->
+    <script src="all.min.js"></script>
+    <!-- CUSTOM JS -->
+    <script>
+        var btn = document.querySelector("button");
+        btn.onclick = () =>{
+            window.print()
+        }
+    </script>
+</body>
+
+</html>
