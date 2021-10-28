@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import { Button, Card, Container, Form } from 'react-bootstrap';
 import { AiFillDelete } from 'react-icons/ai'
 import { RiEditBoxFill } from 'react-icons/ri'
-// import alertify from 'alertifyjs'
+import alertify from 'alertifyjs'
 
 class TodoList extends Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            todos: []
+            todos: [],
+            isupdate:false
         }
 
         this.todoInputRef = React.createRef();
@@ -19,31 +20,72 @@ class TodoList extends Component {
 
 
     // delete all todos
-    deleteAll = () => {
-        console.log('hello delete all', this.todoList.current.children)
-        Array.from(this.todoList.current.children).map(li => {
+    deleteAll = ()=>{
+        console.log('hello delete all',this.todoList.current.children)
+        Array.from(this.todoList.current.children).map(li=>{
             console.log(li)
             li.remove()
         })
-        localStorage.setItem('todos', '[]')
+        localStorage.setItem('todos','[]')
     }
 
 
 
     // load all todos and print into ui
-    loadTodos = () => {
-
+    loadTodos = ()=>{
+        
         let todos = JSON.parse(localStorage.getItem('todos'))
 
         this.setState({
-            todos: todos
+            todos:todos
         })
     }
 
-    componentDidMount() {
-
+    componentDidMount(){
+        if(localStorage.getItem('todos') === null){
+            localStorage.setItem('todos','[]')
+        }
         this.loadTodos()
         console.log('hello component')
+
+    }
+
+
+    update = (x,i)=>{
+        // console.log('update')
+        // console.log(x)
+        // console.log(i)
+        // change input value
+        this.todoInputRef.current.value = x
+        this.todoInputRef.current.id=i
+        // change isupdate property to true
+        this.setState({
+            isupdate:true
+        })
+    }
+
+    updateItem = ()=>{
+        // console.log(this.todoInputRef.current.id)
+        console.log("new record",this.todoInputRef.current.value)
+        let temp = JSON.parse(localStorage.getItem('todos'))
+        console.log("old record",temp[this.todoInputRef.current.id])
+
+        // update array item 
+        temp[this.todoInputRef.current.id] = this.todoInputRef.current.value
+
+        this.setState({
+            todos:temp
+        })
+
+        localStorage.setItem('todos',JSON.stringify(temp))
+        console.log(temp)
+
+        // change isUpdate property to false again and see add todo button
+        this.setState({
+            isupdate:false
+        }) 
+
+        this.todoInputRef.current.value=""
 
     }
 
@@ -61,29 +103,29 @@ class TodoList extends Component {
         this.setState({
             todos: temp
         })
-        // alertify.confirm('Are you sure?', function () { alertify.success('Ok') });
+        alertify.confirm('Are you sure?', function(){ alertify.success('Ok') });
 
-        localStorage.setItem('todos', JSON.stringify(temp))
+        localStorage.setItem('todos',JSON.stringify(temp))
     }
 
-    deleteTodo = (e) => {
-        // console.log(typeof e.target.parentElement.parentElement.getAttribute('dataid'))
+    deleteTodo = (e)=>{
+       // console.log(typeof e.target.parentElement.parentElement.getAttribute('dataid'))
         let todoId = Number(e.target.parentElement.parentElement.getAttribute('dataid'))
 
         // todos array
         let todos = JSON.parse(localStorage.getItem('todos'));
-        todos.map((todo, index) => {
-
-            if (index === todoId) {
+        todos.map((todo,index)=>{
+           
+            if(index === todoId){
                 console.log(todo)
                 // deleted clicked item from array
-                todos.splice(index, 1)
+                todos.splice(index,1)
             }
         })
 
         // updated array need to be set again in localstroage
-        localStorage.setItem('todos', JSON.stringify(todos))
-        //   console.log(e.target.parentElement.parentElement.parentElement.parentElement)
+        localStorage.setItem('todos',JSON.stringify(todos))
+     //   console.log(e.target.parentElement.parentElement.parentElement.parentElement)
         e.target.parentElement.parentElement.parentElement.parentElement.remove()
 
     }
@@ -98,7 +140,7 @@ class TodoList extends Component {
                         <Form id="todo-form" name="form">
                             <div className="form-row">
                                 <div className="form-group col-md-6">
-                                    <input className="form-control" ref={this.todoInputRef} autoComplete="off" name="todo" id="todo" placeholder="Enter a todo" />
+                                    <input className="form-control"  ref={this.todoInputRef} autoComplete="off" name="todo" id="todo" placeholder="Enter a todo" />
                                     <hr />
                                 </div>
                                 <div className="form-group col-md-4">
@@ -110,7 +152,13 @@ class TodoList extends Component {
 
                                 </div>
                             </div>
-                            <Button variant={"danger"} onClick={this.addTodo} >Add Todo</Button>
+                            {
+                                this.state.isupdate ?
+                                <Button variant={"danger"} onClick={this.updateItem} >Update</Button>
+                                :
+                                <Button variant={"danger"} onClick={this.addTodo} >Add Todo</Button>
+                            }
+                            {/* <Button variant={"danger"} onClick={this.addTodo} >Add Todo</Button> */}
                         </Form>
                     </div>
 
@@ -125,23 +173,23 @@ class TodoList extends Component {
                         <hr />
                         <ul className="list-group" ref={this.todoList}>
 
-                            {
+                            {   
                                 this.state.todos.map((todo, index) => (
                                     // render html with todo title here
                                     <li key={index} className="list-group-item d-flex justify-content-between">
                                         {todo}
                                         {console.log(this.state.todos)}
                                         {/* parent of parent of parent */}
-                                        <div>
-                                            <p className="delete-item d-inline" onClick={(e) => this.deleteTodo(e)} dataid={index} ><AiFillDelete /></p>
-                                            <p className="update-item d-inline"><RiEditBoxFill /></p>
+                                        <div> 
+                                            <p className="delete-item d-inline" onClick={(e)=>this.deleteTodo(e)} dataid={index} ><AiFillDelete /></p>
+                                            <p className="update-item d-inline" onClick={()=>this.update(todo,index)}><RiEditBoxFill /></p>
                                         </div>
 
                                     </li>
                                     // render html with todo title here
                                 ))
                             }
-
+                            
                         </ul>
                         <hr />
                         <Button id="clear-todos" variant={'dark'} onClick={this.deleteAll}>Delete All Todos</Button>
